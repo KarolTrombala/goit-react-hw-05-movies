@@ -1,0 +1,10 @@
+
+
+.trendingListItem {
+    margin: 15px 0;
+  text-decoration: none;
+  color: black;
+}
+&:hover {
+    color: orangered;
+  } 
