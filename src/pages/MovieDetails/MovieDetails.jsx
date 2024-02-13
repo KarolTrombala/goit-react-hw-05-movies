@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams, Link, Outlet, useLocation } from 'react-router-dom'
 import { fetchMovieDetailsWithId } from '../../services/api'
-import {Button, Details, Description, Additional, Item} from './MovieDetails.styled'
+import { Button, Details, Description, Additional, Item } from './MovieDetails.styled'
 
 export const MovieDetails = () => {
     const [details, setDetails] = useState({})

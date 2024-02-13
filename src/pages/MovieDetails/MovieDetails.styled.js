@@ -9,7 +9,7 @@ export const Button = styled.button`
     font-weight: 500;
     cursor: pointer;
     color: white;
-    background-color: orangered;
+    background-color: orange;
     margin-bottom: 10px;
 `
 
@@ -33,6 +33,6 @@ export const Item = styled(Link)`
     color: black;
 
     &:hover {
-        color: orangered;
+        color: orange;
     }
 `
