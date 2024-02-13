@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams, Link, Outlet, useLocation } from 'react-router-dom'
-import { fetchMovieDetailsWithId } from 'services'
+import { fetchMovieDetailsWithId } from '../../services/api'
 import css from './MovieDetails.module.css'
 
 export const MovieDetails = () => {

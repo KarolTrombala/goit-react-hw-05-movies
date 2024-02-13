@@ -1,4 +1,4 @@
-import { Trending } from 'components'
+import { Trending } from '../../components/Trending/Trending'
 
 export const Home = () => {
     return (
