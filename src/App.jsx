@@ -3,8 +3,8 @@ import { SharedLayout } from 'components'
 import { Home } from 'pages'
 import { lazy } from 'react'
 
-const Cast = lazy(() => import('./Cast/Cast'))
-const Reviews = lazy(() => import('./Reviews/Reviews'))
+const Cast = lazy(() => import('./components/Cast/Cast'))
+const Reviews = lazy(() => import('./components/Reviews/Reviews'))
 const Movies = lazy(() => import('pages/Movies/Movies'))
 const MovieDetails = lazy(() => import('pages/MovieDetails/MovieDetails'))
 
