@@ -26,10 +26,8 @@ export const Trending = () => {
                 {trending.map((tr) => (
                     <li key={tr.id}>
                         <Link to={`movies/${tr.id}`} state={{ from: location }}>
-                            <TrendingListItem>
-                            {tr.title}
-                        </TrendingListItem>
-                    </Link>
+                            <TrendingListItem>{tr.title}</TrendingListItem>
+                        </Link>
                     </li>
                 ))}
             </ul>
