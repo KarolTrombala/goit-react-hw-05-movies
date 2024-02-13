@@ -35,6 +35,6 @@
   color: black; 
 }
 
-  &:hover {
+.item:hover {
     color: orangered;
   }

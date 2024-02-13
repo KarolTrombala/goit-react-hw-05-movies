@@ -4,6 +4,6 @@
   color: black;
 }
 
-&:hover {
+.trending:hover {
     color: orangered;
   } 

@@ -35,7 +35,7 @@ export const Movies = () => {
                 <ul>
                     {movies.map((movie) => (
                         <Link to={`${movie.id}`} state={{ from: location }}>
-                            <MoviesListItem className={css.moviesListItem}>
+                            <MoviesListItem className={css.movies}>
                                 {movie.title}
                             </MoviesListItem>
                         </Link>
