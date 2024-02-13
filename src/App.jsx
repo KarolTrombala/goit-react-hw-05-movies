@@ -3,10 +3,10 @@ import { SharedLayout } from './components/SharedLayout/SharedLayout';
 import { Home } from './pages/Home/Home';
 import { lazy } from 'react';
 
-const Cast = lazy(() => import('./components/Cast/Cast.jsx'));
-const Reviews = lazy(() => import('./components/Reviews/Reviews.jsx'));
-const Movies = lazy(() => import('./pages/Movies/Movies.jsx'));
-const MovieDetails = lazy(() => import('./pages/MovieDetails/MovieDetails.jsx'));
+const Cast = lazy(() => import('./components/Cast/Cast'));
+const Reviews = lazy(() => import('./components/Reviews/Reviews'));
+const Movies = lazy(() => import('./pages/Movies/Movies'));
+const MovieDetails = lazy(() => import('./pages/MovieDetails/MovieDetails'));
 
 export const App = () => {
     return (
