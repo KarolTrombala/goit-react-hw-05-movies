@@ -34,11 +34,13 @@ export const Movies = () => {
             {movies.length > 0 ? (
                 <ul>
                     {movies.map((movie) => (
+                        <li key={movie.id}>
                         <Link to={`${movie.id}`} state={{ from: location }}>
                             <MoviesListItem>
                                 {movie.title}
                             </MoviesListItem>
                         </Link>
+                        </li>
                     ))}
                 </ul>
             ) : (
