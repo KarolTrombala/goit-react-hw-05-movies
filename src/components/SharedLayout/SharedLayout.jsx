@@ -1,13 +1,13 @@
 import { Suspense } from 'react'
 import { Outlet } from 'react-router-dom'
-import css from './SharedLayout.module.css'
+import { Container, Header, Link } from './SharedLayout.styled'
 
 export const SharedLayout = () => {
     return (
-        <Container className={css.container}>
-            <Header className={css.header}>
+        <Container>
+            <Header>
                 <nav>
-                    <Link to="/" end className={css.link}>
+                    <Link to="/" end>
                         Home
                     </Link>
 

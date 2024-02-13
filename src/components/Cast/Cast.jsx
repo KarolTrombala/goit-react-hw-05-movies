@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { fetchMovieCast } from '../../services/api.jsx'
-import css from './Cast.module.css'
+import { CastStyle } from './Cast.styled'
 
 export const Cast = () => {
     const [cast, setCast] = useState([])
@@ -28,7 +28,7 @@ export const Cast = () => {
                             alt={member.name}
                             width={100}
                         ></img>
-                        <CastStyle className={css.castStyle}>
+                        <CastStyle>
                             <span>{member.name}</span>
                             <span>Character: {member.character}</span>
                         </CastStyle>

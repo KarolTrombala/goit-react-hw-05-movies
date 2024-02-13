@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams, Link, Outlet, useLocation } from 'react-router-dom'
 import { fetchMovieDetailsWithId } from '../../services/api'
-import css from './MovieDetails.module.css'
+import {Button, Details, Description, Additional, Item} from './MovieDetails.styled'
 
 export const MovieDetails = () => {
     const [details, setDetails] = useState({})
@@ -32,15 +32,15 @@ export const MovieDetails = () => {
     return (
         <main>
             <Link to={backLinkHref}>
-                <Button className={css.button}>&#x2190; Go back</Button>
+                <Button>&#x2190; Go back</Button>
             </Link>
-            <Details className={css.details}>
+            <Details>
                 <img
                     src={`https://image.tmdb.org/t/p/original${poster_path}`}
                     alt={title}
                     width={350}
                 />
-                <Description className={css.description}>
+                <Description>
                     <h2>
                         {title}({release_date ? release_date.slice(0, 4) : ''})
                     </h2>
@@ -53,11 +53,11 @@ export const MovieDetails = () => {
                     {genres ? getGenres() : ''}
                 </Description>
             </Details>
-            <Additional className={css.additional}>
+            <Additional>
                 <span>Additional information</span>
                 <ul>
                     <li>
-                        <Item className={css.item} to="cast">
+                        <Item to="cast">
                             Cast
                         </Item>
                     </li>

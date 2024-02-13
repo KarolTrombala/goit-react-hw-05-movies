@@ -1,7 +1,7 @@
 import { Link, useLocation, useSearchParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { fetchMoviesWithQuery } from '../../services/api'
-import css from './Movies.module.css'
+import { MoviesListItem } from './Movies.styled'
 
 export const Movies = () => {
     const [movies, setMovies] = useState([])
@@ -35,7 +35,7 @@ export const Movies = () => {
                 <ul>
                     {movies.map((movie) => (
                         <Link to={`${movie.id}`} state={{ from: location }}>
-                            <MoviesListItem className={css.movies}>
+                            <MoviesListItem>
                                 {movie.title}
                             </MoviesListItem>
                         </Link>
