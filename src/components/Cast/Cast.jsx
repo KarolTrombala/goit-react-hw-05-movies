@@ -22,7 +22,7 @@ export const Cast = () => {
         <section>
             <ul>
                 {cast.map((member) => (
-                    <li key={id}>
+                    <li key={member.id}>
                         <img
                             src={`https://image.tmdb.org/t/p/original${member.profile_path}`}
                             alt={member.name}
