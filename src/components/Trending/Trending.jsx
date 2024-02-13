@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import { fetchTrendingMovies } from 'services'
+import { fetchTrendingMovies } from '../../services/api'
 import css from './Trending.module.css'
 
 export const Trending = () => {
