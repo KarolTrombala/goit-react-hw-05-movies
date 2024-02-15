@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { fetchMovieCast } from '../../services/api.jsx'
 import { CastStyle } from './Cast.styled'
 
-export const Cast = () => {
+const Cast = () => {
     const [cast, setCast] = useState([])
     const { id } = useParams()
 
@@ -38,3 +38,5 @@ export const Cast = () => {
         </section>
     )
 }
+
+export default Cast;

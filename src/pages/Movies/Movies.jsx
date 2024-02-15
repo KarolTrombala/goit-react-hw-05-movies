@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { fetchMoviesWithQuery } from '../../services/api'
 import { MoviesListItem } from './Movies.styled'
 
-export const Movies = () => {
+const Movies = () => {
     const [movies, setMovies] = useState([])
     const [searchParams, setSearchParams] = useSearchParams()
     const location = useLocation()
@@ -35,11 +35,11 @@ export const Movies = () => {
                 <ul>
                     {movies.map((movie) => (
                         <li key={movie.id}>
-                        <Link to={`${movie.id}`} state={{ from: location }}>
-                            <MoviesListItem>
-                                {movie.title}
-                            </MoviesListItem>
-                        </Link>
+                            <Link to={`${movie.id}`} state={{ from: location }}>
+                                <MoviesListItem>
+                                    {movie.title}
+                                </MoviesListItem>
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -48,4 +48,6 @@ export const Movies = () => {
             )}
         </main>
     )
-}
+};
+
+export default Movies;
